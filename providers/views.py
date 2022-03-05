@@ -6,13 +6,12 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from shapely.geometry import Point, Polygon
+
 import json
 
 
 def check_if_point_in_polygom(point, coordinates):
-    poly = Polygon(coordinates)
-    return point.within(poly)
+    pass
 
 
 class ServiceAreaList(APIView):
